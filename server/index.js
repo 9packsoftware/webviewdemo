@@ -17,7 +17,7 @@ const forward = async (req, resp, contentType) => {
     resp.end();
 }
 
-server.get('/document.pdf', async (req, resp) => {
+server.get('/document', async (req, resp) => {
     await forward(req, resp, 'application/pdf');
 })
 
